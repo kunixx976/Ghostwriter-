@@ -24,8 +24,9 @@ User inputs are processed in real time and not stored permanently. The app does 
 🌐 Web-Based Access
 No installation needed. Works directly in the browser and is deployed for easy access via Vercel.
 
-#🛠️ Technology Stack
-Frontend
+##🛠️ Technology Stack
+
+-**Frontend**
 Next.js – Used for building a fast, SEO-friendly React-based frontend.
 React – Component-based UI for better maintainability.
 Tailwind CSS (or custom CSS if applicable) – For clean and responsive styling.
