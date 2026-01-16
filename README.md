@@ -1,93 +1,94 @@
-# Ghostwriter-
-A high-fidelity study extraction engine that turns lecture materials into clear, exam-ready knowledge.
+# 👻 Ghostwriter
 
-#About the App
-Ghostwriter is a production-grade academic distillation engine designed to transform massive datasets—textbooks, lecture slides, and recordings—into structured "Master Guides" with zero latency.
-Users can upload study materials and receive meaningful insights without manual reading, cutting down study time and improving recall.
+High-Fidelity Study Extraction Engine
 
-#Key Features
-✍️ AI-Assisted Writing
-Generate coherent, context-aware text based on short prompts or rough ideas. The AI helps expand, rephrase, or organize content while keeping it natural and readable.
+Ghostwriter is a production-grade academic distillation engine that transforms lecture materials—textbooks, slides, and recordings—into structured, exam-ready "Master Guides" with minimal manual effort. Upload study materials and get concise, prioritized study content that helps you learn faster and remember more.
 
-⚡ Fast and Responsive
-Optimized for quick responses with minimal load time. The interface is smooth and works well across devices, making it easy to use on the go.
+---
 
-🧠 Context-Aware Outputs
-Ghostwriter focuses on relevance and clarity. The generated content aims to stay aligned with the intent of the prompt rather than producing generic filler text.
+## ✨ Key Features
 
-🎯 Clean and Minimal UI
-A distraction-free interface that keeps the focus on writing. No popups, no unnecessary settings, just the editor and results.
+- 🚀 Intelligent Processing: Extract and synthesize text from PDFs, PPTX, DOCX, images, and more for high-quality outputs.
+- ✍️ AI-Assisted Writing: Expand, reorganize, and rephrase notes into clean, exam-focused content.
+- 🧠 Context-Aware Outputs: Responses prioritize relevance and clarity over generic filler.
+- 🎴 Smart Flashcards: Convert materials into interactive flashcards for rapid revision.
+- ⚡ Fast & Responsive: Optimized for quick responses and a smooth UI across devices.
+- 🔐 Privacy-First: Stateless processing where inputs are not stored permanently unless explicitly configured.
+- 🎯 Clean, Minimal UI: Distraction-free interface designed around focused study sessions.
+- 💎 Premium Design: Modern, responsive visuals with dark mode and subtle motion.
 
-🔐 Stateless and Privacy-Friendly
-User inputs are processed in real time and not stored permanently. The app does not aim to collect or retain user data beyond what is required to generate responses.
+---
 
-🌐 Web-Based Access
-No installation needed. Works directly in the browser and is deployed for easy access via Vercel.
+## 🛠️ Technology Stack
 
-##🛠️ Technology Stack
+- Framework: Next.js (App Router)
+- Frontend: React with Tailwind CSS (or custom styling where needed)
+- Animations: Framer Motion (optional)
+- Icons: Lucide / Heroicons
+- Backend: Next.js API routes / Node.js
+- AI Engine: Large language model API (Gemini / compatible LLM)
+- Parsing: Office/PDF parsing libraries (for PPTX, DOCX, PDF extraction)
+- Deployment: Vercel (recommended)
 
--**Frontend**
-Next.js – Used for building a fast, SEO-friendly React-based frontend.
-React – Component-based UI for better maintainability.
-Tailwind CSS (or custom CSS if applicable) – For clean and responsive styling.
+---
 
-Backend
-Next.js API Routes – Lightweight backend handling AI requests.
-Node.js – Runtime environment for server-side logic.
+## 🚀 Getting Started
 
-AI Integration
-Large Language Model API – Powers the core text generation and writing assistance features.
+1. Clone the repository
+```bash
+git clone https://github.com/kunixx976/Ghostwriter-.git
+cd Ghostwriter-
+```
 
-Deployment
-Vercel – Used for seamless deployment, hosting, and environment management.
-
-#🚀 Getting Started
-1.Clone the Repository 
-
-git clone https://github.com/kunnixx427/ghostwriter.git 
-cd Ghostwriter
-
-2. Install Dependencies
-
+2. Install dependencies
+```bash
 npm install
+```
 
-3. Set Up Environment Variables
-Create a .env.local file in the root directory and add:
-
+3. Set up environment variables  
+Create a `.env.local` file in the project root and add:
+```env
 GEMINI_API_KEY=your_gemini_api_key_here
+# or: LLM_API_KEY=your_api_key_here
+```
+Keep this file private and never commit it to version control.
 
-Make sure you keep this file private and do not commit it to GitHub.
-
-4. Run the Development Server
-
+4. Run the development server
+```bash
 npm run dev
+```
+Open http://localhost:3000 in your browser.
 
-The app will be available at:
+---
 
-http://localhost:3000
+## 📂 Project Structure (high level)
 
-Open http://localhost:3000 with your browser to see the results.
+- app/ or pages/ — Next.js application routes and pages
+- app/api/ghostwriter/route.ts — Core AI streaming / API route (where the model is called)
+- src/components/ — Reusable UI components (Bento cards, flashcards, editor, etc.)
+- public/ — Static assets
+- app/globals.css or src/styles/ — Theme tokens, Tailwind config, and custom CSS
 
-#🎨Design Philosophy
+(Adjust paths above if your repo uses a different layout.)
 
-Ghostwriter is built around a few simple principles:
+---
 
-Simplicity First
+## 🎨 Design Philosophy
 
-The app avoids unnecessary complexity. Every feature exists to support writing, not distract from it.
+- Simplicity First — Features exist to support studying, not to distract.
+- Human-Centered AI — AI assists and amplifies user thought; it does not replace it.
+- Speed & Focus — Minimal interface and fast interactions to keep users in the flow.
+- Privacy by Default — Stateless processing where possible; do not store user inputs unless needed.
+- Practical Over Flashy — Prioritize reliability, clarity, and usefulness over gimmicks.
 
-Human-Centered AI
+---
 
-The AI is meant to assist, not dominate. The goal is to enhance human thinking and expression, not replace it.
+## 📌 Notes & Tips
 
-Speed and Focus
+- If you plan to deploy to Vercel, add environment variables in the Vercel dashboard rather than committing them to the repo.
+- For better parsing of slide decks and PDFs, include robust error handling and fallback extractors.
+- Consider adding an examples/ folder with sample input files and expected outputs for testing.
 
-Fast interactions and a minimal interface help users stay in their flow state while writing.
+---
 
-Privacy by Default
-
-The app follows a stateless approach wherever possible, ensuring user inputs are not stored or reused without intent.
-
-Practical Over Flashy
-
-Instead of overloaded features, Ghostwriter prioritizes reliability, clarity, and usefulness.
+“Distilling lecture noise into exam-day clarity.”
