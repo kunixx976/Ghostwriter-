@@ -61,18 +61,6 @@ Open http://localhost:3000 in your browser.
 
 ---
 
-## 📂 Project Structure (high level)
-
-- app/ or pages/ — Next.js application routes and pages
-- app/api/ghostwriter/route.ts — Core AI streaming / API route (where the model is called)
-- src/components/ — Reusable UI components (Bento cards, flashcards, editor, etc.)
-- public/ — Static assets
-- app/globals.css or src/styles/ — Theme tokens, Tailwind config, and custom CSS
-
-(Adjust paths above if your repo uses a different layout.)
-
----
-
 ## 🎨 Design Philosophy
 
 - Simplicity First — Features exist to support studying, not to distract.
