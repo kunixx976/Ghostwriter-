@@ -1,6 +1,7 @@
 # 👻 Ghostwriter
 
 High-Fidelity Study Extraction Engine
+🔗 Live app: https://ghostwriter1.vercel.app/
 
 Ghostwriter is a production-grade academic distillation engine that transforms lecture materials—textbooks, slides, and recordings—into structured, exam-ready "Master Guides" with minimal manual effort. Upload study materials and get concise, prioritized study content that helps you learn faster and remember more.
 
@@ -21,14 +22,20 @@ Ghostwriter is a production-grade academic distillation engine that transforms l
 
 ## 🛠️ Technology Stack
 
-- Framework: Next.js (App Router)
-- Frontend: React with Tailwind CSS (or custom styling where needed)
-- Animations: Framer Motion (optional)
-- Icons: Lucide / Heroicons
-- Backend: Next.js API routes / Node.js
-- AI Engine: Large language model API (Gemini / compatible LLM)
-- Parsing: Office/PDF parsing libraries (for PPTX, DOCX, PDF extraction)
-- Deployment: Vercel (recommended)
+Technology Stack
+-Frontend : Next.js – Used for building a fast, SEO-friendly React-based frontend
+React – Component-based UI for better maintainability
+Tailwind CSS (or custom CSS if applicable) – For clean and responsive styling
+
+-Backend
+Next.js API Routes – Lightweight backend handling AI requests
+Node.js – Runtime environment for server-side logic
+
+-AI Integration
+Large Language Model API – Powers the core text generation and writing assistance features
+
+-Deployment
+Vercel – Used for seamless deployment, hosting, and environment management
 
 ---
 
@@ -79,4 +86,3 @@ Open http://localhost:3000 in your browser.
 
 ---
 
-“Distilling lecture noise into exam-day clarity.”
